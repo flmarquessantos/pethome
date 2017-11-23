@@ -1,0 +1,7 @@
+PetHome é fruto de um trabalho desenvolvido para feira de Marketing e aplicativos da
+Fatec Rio Preto. O aplicativo tem o objetivo de facilitar o agendamento de banho e 
+tosa para pessoas que possuem cachorros ou gatos de estimação. Focado em profissionais
+que prestam esse serviço na casa do cliente, com o aplicativo voce consegue facilmente
+agendar o banho e tosa de seu pet para ser realizado na sua casa, além de verificar
+o que as pessoas que ja utilizaram o serviço do prestador antes acharam dele.
+Em breve terá novas funções, como agendamento de Hotel, Veterianarios e adestradores.

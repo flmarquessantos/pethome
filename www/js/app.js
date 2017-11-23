@@ -137,8 +137,15 @@ var user = firebase.auth().currentUser;
          $scope.meupet.$remove(obj);
     }
 
+    $scope.enviar = function(msg){
+    msg.users = user.uid + "_" + id;
+    var ref = firebase.database().ref().child('mensagem');
+    $firebaseArray(ref).$add(msg);
+    }
+
 // var ref = firebase.database().ref().child('mensagem');
 //  $scope.mensagem = $firebaseArray(ref);
+
 
  
 });
