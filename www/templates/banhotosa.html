@@ -1,0 +1,41 @@
+
+<ion-view title="Banho e Tosa">
+
+
+   <!-- <ion-content> -->
+
+ <!-- <div class="list">
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/banho1.jpg">
+      <h2>Jacira Banho e Tosa</h2>
+      <p>Utilizo os melhores produtos. </p>
+       <p>Serviço a Domicilio </p>
+      
+    </a>  -->
+
+  <ion-content>
+        
+       <ion-list class="list">
+        
+        <label class="item item-input">
+          
+            </label>
+
+
+        <ion-item class="item item-avatar" ng-repeat="banho_tosa in contatos" ng-click="agenda(banho_tosa.$id)">
+          <!-- <StorageReference imagesRef = storageRef.child("images");/> -->
+          <img src="{{banho_tosa.imagem}}"/> 
+          <h2>{{banho_tosa.nome}}</h2>
+          <p>{{banho_tosa.descricao}}</p> 
+          
+          
+          
+        </ion-item>
+        
+
+      </ion-content>
+
+    
+      <!-- </ion-content> -->
+</ion-view>

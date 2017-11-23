@@ -1,0 +1,41 @@
+<ion-view title="Meus Pets">
+
+
+   <!-- <ion-content> -->
+
+ <!-- <div class="list">
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/banho1.jpg">
+      <h2>Jacira Banho e Tosa</h2>
+      <p>Utilizo os melhores produtos. </p>
+       <p>Serviço a Domicilio </p>
+      
+    </a>  -->
+
+  <ion-content>
+        
+       <ion-list class="list">
+        
+        
+
+
+        <ion-item class="item item-avatar" ng-repeat="pets in meupet">
+          
+           <h2>{{pets.nome}}</h2>
+           <p>{{pets.tipo}}</p>
+
+            <ion-option-button class="button-assertive" ng-click="apagar(pets.$id)">
+            Apagar
+          </ion-option-button>
+          
+          
+          
+        </ion-item>
+        
+
+      </ion-content>
+
+    
+      <!-- </ion-content> -->
+</ion-view>

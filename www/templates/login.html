@@ -1,0 +1,44 @@
+<ion-view title="PetHome">
+<!-- <ion-nav-buttons side="right">
+    <button class="button button-clear icon ion-ios-plus-empty" ng-click="add()"></button>
+</ion-nav-buttons> -->
+
+   <ion-content>
+        
+     
+         <ion-item>
+          <img src="{{imglogin.imagem}}"/> 
+         </ion-item>
+          
+          
+          
+       
+  <form ng-submit="entrar(user)" name="form"> 
+
+    <label class="item item-input item-stacked-label">
+    <span class="input-label">E-mail</span>
+    <input type="email" ng-model="user.email" required >
+        </label>
+
+        <label class="item item-input item-stacked-label">
+    <span class="input-label">Senha</span>
+    <input type="password" ng-minlength="6" ng-model="user.password" required >
+        </label>
+
+<button ng-disabled="form.$invalid" class="button button-positive button-full">
+             Entrar
+        </button>
+
+        <a ui-sref="cadastro" class="button button-positive button-full">
+             Cadastrar
+        </a>
+
+<button class="button button-block button-positive ion-ios-paw" ng-click="teste()">
+  
+  Esqueci Minha Senha
+</button>
+
+></form>
+
+</ion-content>
+</ion-view>

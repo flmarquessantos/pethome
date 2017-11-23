@@ -1,0 +1,32 @@
+<ion-view title="">
+
+     <ion-content>
+        
+       <ion-list class="list">
+        
+         <ion-item >
+          
+           <img src="{{baner.imagem}}"/> 
+          <h2>{{baner.nome}}</h2>
+          <p>{{baner.descricao}}</p> 
+          <p>Horário de Atendimento:  {{baner.horario}}</p>
+          <p>Serviços:   {{baner.servico}}</p>
+
+          <button class="button button-block button-positive" ng-click="chat()">
+           Iniciar Chat
+          </button>
+
+            <h2>COMO FOI  SEU ATENDIMENTO?</h2>
+             
+          <button class="button button-block button-balanced ion-thumbsup" ng-click="gostei()">
+           Gostei={{_curtidas}} pessoas gostaram.
+          </button>
+
+          <button class="button button-block button-assertive ion-thumbsdown" ng-click="naogostei()">
+           Não Gostei={{_naocurtidas}} não gostaram
+          </button>
+             
+     
+
+
+</ion-view>

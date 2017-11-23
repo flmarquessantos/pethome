@@ -1,0 +1,74 @@
+<ion-view title="Cadastro Pet">
+  <!-- <ion-nav-buttons side="right">
+    <button class="button button-clear icon ion-ios-plus-empty" ng-click="add()"></button>
+</ion-nav-buttons>   -->
+
+   <ion-content>
+        <form ng-submit="salvarpet(petcad)">
+    <div class="list">
+  <!-- <ion-list>
+  <ion-radio ng-model="petcad.tipo" ng-value="'Cachorro'">Cachorro</ion-radio>
+  <ion-radio ng-model="petcad.tipo" ng-value="'Gato'">Gato</ion-radio>
+</ion-list> -->
+
+<label class="item item-input item-select">
+    <div class="input-label">
+      Selecione
+    </div>
+    <select ng-model="petcad.tipo">
+       <option selected>Cachorro</option>
+      <option>Gato</option>
+    </select>
+  </label>
+  
+   <label class="item item-input item-stacked-label">
+    <span class="input-label">Nome</span>
+    <input type="text" ng-model="petcad.nome" >
+  </label>
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Selecione
+    </div>
+    <select ng-model="petcad.sexo">
+       <option selected>Macho</option>
+      <option>Fêmea</option>
+    </select>
+  </label>
+
+   <label class="item item-input item-stacked-label">
+    <span class="input-label">Raça</span>
+    <input type="text" ng-model="petcad.raca" >
+  </label>
+
+   <label class="item item-input item-stacked-label">
+    <span class="input-label">Idade</span>
+    <input type="text" ng-model="petcad.idade" >
+  </label>
+
+   <label class="item item-input item-stacked-label">
+    <span class="input-label">Peso</span>
+    <input type="text" ng-model="petcad.peso" >
+  </label> 
+
+  
+<button class="button button-block button-positive">
+  Cadastrar
+</button>
+
+<button class="button button-block button-positive" ng-click="tirarFoto()">
+  Tirar Foto
+</button>
+
+<img ng-src="url"/>
+
+       </div> 
+        
+        </form>
+
+
+
+     
+
+      </ion-content>
+</ion-view>
