@@ -139,6 +139,7 @@ var user = firebase.auth().currentUser;
 
     $scope.enviar = function(msg){
     msg.users = user.uid + "_" + id;
+    //msg.escritor = user.id;
     var ref = firebase.database().ref().child('mensagem');
     $firebaseArray(ref).$add(msg);
     }
